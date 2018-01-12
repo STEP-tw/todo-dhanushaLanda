@@ -43,5 +43,23 @@ describe('app',()=>{
         done();
       })
     })
+    it('serves the login page with message for a failed login',done=>{
+      request(app,{method:'GET',url:'/login.html',headers:{'cookie':'message=login failed'}},res=>{
+        th.status_is_ok(res);
+        th.body_contains(res,'password:');
+        th.body_contains(res,'login failed');
+        th.should_not_have_cookie(res,'message');
+        done();
+      })
+    })
+  });
+  describe('GET /home.html',()=>{
+    it('server the home page of logined User',done=>{
+      request(app,{method:'GET',url:'/home.html'},res=>{
+        th.status_is_ok(res);
+        th.body_contains(res,'ToDoLists');
+        done();
+      })
+    })
   })
 });
