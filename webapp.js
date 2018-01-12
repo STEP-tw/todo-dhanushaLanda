@@ -25,9 +25,6 @@ let invoke = function(req,res){
   let handler = this._handlers[req.method][req.url];
   console.log(handler);
   if(!handler){
-    res.statusCode = 404;
-    res.write('File not found!');
-    res.end();
     return;
   }
   handler(req,res);
@@ -35,6 +32,7 @@ let invoke = function(req,res){
 const initialize = function(){
   this._handlers = {GET:{},POST:{}};
   this._preprocess = [];
+  this._postprocess = [];
 };
 const get = function(url,handler){
   this._handlers.GET[url] = handler;
@@ -45,6 +43,9 @@ const post = function(url,handler){
 const use = function(handler){
   this._preprocess.push(handler);
 };
+const usePostProcess = function(handler){
+  this._postprocess.push(handler);
+}
 let urlIsOneOf = function(urls){
   return urls.includes(this.url);
 }
@@ -65,6 +66,10 @@ const main = function(req,res){
     });
     if(res.finished) return;
     invoke.call(this,req,res);
+    this._postprocess.forEach(middleware=>{
+      if(res.finished) return;
+      middleware(req,res);
+    });
   });
 };
 
@@ -76,6 +81,7 @@ let create = ()=>{
   rh.get = get;
   rh.post = post;
   rh.use = use;
+  rh.usePostProcess = usePostProcess;
   return rh;
 }
 exports.create = create;
