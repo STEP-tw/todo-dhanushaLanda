@@ -1,6 +1,18 @@
 let webapp = require('./webapp.js');
 let fs = require('fs');
 
+
+const logger = function(fs,req,res) {
+  let logs = ['--------------------------------------------------------------',
+    `${req.method}`,
+    `${req.url}`,
+    `${JSON.stringify(req.headers,null,2)}`,
+    ''
+  ].join('\n');
+  console.log(`${req.method}    ${req.url}`);
+  fs.appendFile('./data/log.json',logs,()=>{});
+}
+
 const fileNotFound = function(fileName){
   return !fs.existsSync(fileName);
 };
@@ -27,6 +39,7 @@ const serveResource = function(resource,res,content){
   let resourceType = getContentType(resource);
   res.setHeader('Content-Type',resourceType);
   res.write(content);
+
   res.end();
 }
 
@@ -42,15 +55,20 @@ const fileHandler = function(req,res){
   serveResource(resource,res,content);
 }
 
+const processLogin = function(){
+  
+}
 
 
 
 /*=================*/
 let app = webapp.create();
-
+app.use((req,res)=>{logger(fs,req,res)});
 app.get('/',(req,res)=>{
   res.redirect('/index.html');
 });
+
+app.post('login.html',processLogin);
 
 app.usePostProcess(fileHandler);
 

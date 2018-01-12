@@ -1,0 +1,50 @@
+--------------------------------------------------------------
+GET
+/login.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "cache-control": "max-age=0",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+}
+undefined
+--------------------------------------------------------------
+GET
+/bad
+{}
+undefined
+--------------------------------------------------------------
+GET
+/
+{}
+undefined
+--------------------------------------------------------------
+GET
+/index.html
+{}
+undefined
+--------------------------------------------------------------
+GET
+/login.html
+{}
+undefined
+--------------------------------------------------------------
+GET
+/bad
+{}
+--------------------------------------------------------------
+GET
+/
+{}
+--------------------------------------------------------------
+GET
+/index.html
+{}
+--------------------------------------------------------------
+GET
+/login.html
+{}
