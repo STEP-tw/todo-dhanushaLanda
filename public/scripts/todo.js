@@ -1,7 +1,7 @@
-const Todo = function(title,discription,items){
-  this.title = title;
-  this.discription = discription ;
-  this.items = items;
+const Todo = function(todoObject){
+  this.title = todoObject.title;
+  this.description = todoObject.description ;
+  this.items = todoObject.items;
 }
 Todo.prototype.getTitle = function () {
   return this.title;

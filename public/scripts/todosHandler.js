@@ -8,7 +8,6 @@ class TodosHandler {
   }
   loadTodos(){
     let filePath = this.storagePath;
-    let commentHandler = this;
     fs.readFile(filePath,'utf8',(err,userTodos)=>{
       if(err) throw err;
       userTodos = JSON.parse(userTodos)
@@ -18,8 +17,10 @@ class TodosHandler {
   storeTodo(todo){
     this.todos.addTodo(todo);
     let allTodos = this.todos.getAllTodos();
-    fs.writeFile(this.storagePath,JSON.stringify(allTodos),(err)=>{
-      if(err) throw err;
+    console.log(allTodos);
+    console.log(this.storagePath);
+    fs.writeFile(this.storagePath,allTodos,(err)=>{
+      // console.log(err);
     });
   }
   map(mapperFunction){

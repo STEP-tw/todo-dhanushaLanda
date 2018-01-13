@@ -92,6 +92,11 @@ const processTodos = function(req,res){
   res.end();
 }
 
+const storeTodo = function(req,res){
+  todosHandler.storeTodo(req.body);
+  req.statusCode = 200;
+  res.end();
+}
 
 
 /*=================*/
@@ -106,6 +111,8 @@ app.get('/login.html',processGetLogin);
 app.post('/login.html',processPostLogin);
 
 app.get('/todos',processTodos);
+
+app.post('/newTodo',storeTodo);
 
 app.usePostProcess(fileHandler);
 
