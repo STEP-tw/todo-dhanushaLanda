@@ -13,7 +13,8 @@ class Todos {
     return this.todos;
   }
   map(mapperFunction){
-    return this.todos.map(mapperFunction);
+    let todoTitles = Object.keys(this.todos);
+    return todoTitles.map(mapperFunction);
   }
 }
 

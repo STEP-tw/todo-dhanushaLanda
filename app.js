@@ -81,13 +81,13 @@ const processPostLogin = function(req,res){
   res.end();
 }
 const toHtml = function(todo){
-  console.log(todo);
-  return `<p>${todo.title}</p>`
+  return `<h2>${todo}</h2>`
 }
 
 const processTodos = function(req,res){
   let serveResponse = {};
-  serveResource.todos =  todosHandler.map(toHtml).join('<br>');
+  serveResource.todos =  todosHandler.map(toHtml).join('');
+  console.log(serveResource.todos);
   res.write(serveResource.todos);
   res.end();
 }

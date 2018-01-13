@@ -4,14 +4,33 @@
     <meta charset="utf-8">
     <title>TodoForm</title>
     <script src="./scripts/home.js" charset="utf-8"></script>
+    <style media="screen">
+      input{
+        width: 300px;
+        font-size: 20px;
+      }
+      body{
+        font-size: 20px;
+      }
+      textarea{
+        font-size: 20px;
+      }
+    </style>
   </head>
   <body>
-      Title
-      <input id="title" type="text" name="title" value=""><br><br>
-      discription:
-      <textarea id="description" name="description" rows="5" cols="30"></textarea><br><br>
-      Items:
-      <textarea id="items" name="items" rows="4" cols="80"></textarea><br><br>
-      <button type="button" onclick="requestToAddTodo()">Submit</button>
+    <form  id="todoForm" method="post">
+      Title :
+        <input id="title" type="text" name="title" value="" size="50px"><br><br>
+        discription:
+        <textarea id="description" name="description" rows="3" cols="30"></textarea><br><br>
+        Items:
+        <textarea id="items" name="items" rows="5" cols="60"></textarea><br><br>
+        <button type="button" onclick="requestToAddTodo()">Submit</button>
+        <h3><a href='home.html'><<</a>HOME PAGE</h3>
+
+
+
+    </form>
+
   </body>
 </html>
