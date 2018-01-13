@@ -62,4 +62,16 @@ describe('app',()=>{
       })
     })
   })
+
+  describe('GET /logout',()=>{
+    it('redirects to login page',done=>{
+      request(app,{method:'GET',url:'/logout'},res=>{
+        th.should_be_redirected_to(res,'/login.html');
+        th.should_not_have_cookie(res,'message');
+        done();
+      })
+    })
+
+  })
+
 });

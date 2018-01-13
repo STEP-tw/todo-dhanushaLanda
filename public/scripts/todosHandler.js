@@ -2,7 +2,7 @@ let fs = require('fs');
 let Todos = require('./todos.js');
 
 class TodosHandler {
-  constructor(storagePath,){
+  constructor(storagePath){
     this.storagePath = storagePath;
     this.todos;
   }
