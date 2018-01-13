@@ -8016,3 +8016,1100 @@ GET
   "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
   "cookie": "message="
 }
+--------------------------------------------------------------
+GET
+/home.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "cache-control": "max-age=0",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "upgrade-insecure-requests": "1",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+GET
+/viewTodos.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/home.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+GET
+/scripts/viewTodos.js
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "*/*",
+  "referer": "http://localhost:9000/viewTodos.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+GET
+/todos
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "*/*",
+  "referer": "http://localhost:9000/viewTodos.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+GET
+/home.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/viewTodos.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+GET
+/todoForm.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/home.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+GET
+/scripts/home.js
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "*/*",
+  "referer": "http://localhost:9000/todoForm.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+POST
+/newTodo
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "content-length": "41",
+  "origin": "http://localhost:9000",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "content-type": "text/plain;charset=UTF-8",
+  "accept": "*/*",
+  "referer": "http://localhost:9000/todoForm.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+GET
+/home.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/todoForm.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+GET
+/viewTodos.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/home.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+GET
+/scripts/viewTodos.js
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "*/*",
+  "referer": "http://localhost:9000/viewTodos.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+GET
+/todos
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "*/*",
+  "referer": "http://localhost:9000/viewTodos.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+GET
+/todoForm.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "cache-control": "max-age=0",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "upgrade-insecure-requests": "1",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+GET
+/scripts/home.js
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "*/*",
+  "referer": "http://localhost:9000/todoForm.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+GET
+/home.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/todoForm.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+GET
+/home.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "cache-control": "max-age=0",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "upgrade-insecure-requests": "1",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/todoForm.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+GET
+/
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "upgrade-insecure-requests": "1",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+GET
+/index.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "upgrade-insecure-requests": "1",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+GET
+/login.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/index.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+POST
+/login.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "content-length": "28",
+  "cache-control": "max-age=0",
+  "origin": "http://localhost:9000",
+  "upgrade-insecure-requests": "1",
+  "content-type": "application/x-www-form-urlencoded",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/login.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+GET
+/home.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "cache-control": "max-age=0",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/login.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+GET
+/
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "upgrade-insecure-requests": "1",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+GET
+/index.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "upgrade-insecure-requests": "1",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+GET
+/login.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/index.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+POST
+/login.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "content-length": "26",
+  "cache-control": "max-age=0",
+  "origin": "http://localhost:9000",
+  "upgrade-insecure-requests": "1",
+  "content-type": "application/x-www-form-urlencoded",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/login.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+GET
+/home.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "cache-control": "max-age=0",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/login.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+GET
+/logout
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/home.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+GET
+/login
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/home.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message=,Expires=Thu, 01 Jan 1970 00:00:00 GMT; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "upgrade-insecure-requests": "1",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message=,Expires=Thu, 01 Jan 1970 00:00:00 GMT; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/index.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "upgrade-insecure-requests": "1",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message=,Expires=Thu, 01 Jan 1970 00:00:00 GMT; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/login.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/index.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message=,Expires=Thu, 01 Jan 1970 00:00:00 GMT; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+POST
+/login.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "content-length": "28",
+  "cache-control": "max-age=0",
+  "origin": "http://localhost:9000",
+  "upgrade-insecure-requests": "1",
+  "content-type": "application/x-www-form-urlencoded",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/login.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message=,Expires=Thu, 01 Jan 1970 00:00:00 GMT; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/home.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "cache-control": "max-age=0",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/login.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT; message="
+}
+--------------------------------------------------------------
+GET
+/logout
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/home.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT; message="
+}
+--------------------------------------------------------------
+GET
+/login.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/home.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT; message=,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/login.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "cache-control": "max-age=0",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "upgrade-insecure-requests": "1",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/home.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT; message=,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "upgrade-insecure-requests": "1",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT; message=,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/index.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "upgrade-insecure-requests": "1",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT; message=,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/login.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/index.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT; message=,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "upgrade-insecure-requests": "1",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+}
+--------------------------------------------------------------
+GET
+/index.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "upgrade-insecure-requests": "1",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+}
+--------------------------------------------------------------
+GET
+/login.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/index.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+}
+--------------------------------------------------------------
+POST
+/login.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "content-length": "27",
+  "cache-control": "max-age=0",
+  "origin": "http://localhost:9000",
+  "upgrade-insecure-requests": "1",
+  "content-type": "application/x-www-form-urlencoded",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/login.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+}
+--------------------------------------------------------------
+GET
+/home.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "cache-control": "max-age=0",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/login.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+GET
+/logout
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/home.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+GET
+/login.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/home.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message='',Expires=Thu, 01 Jan 1970 00:00:00 GMT; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/login.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "cache-control": "max-age=0",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "upgrade-insecure-requests": "1",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/home.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message='',Expires=Thu, 01 Jan 1970 00:00:00 GMT; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "upgrade-insecure-requests": "1",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message='',Expires=Thu, 01 Jan 1970 00:00:00 GMT; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/index.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "upgrade-insecure-requests": "1",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message='',Expires=Thu, 01 Jan 1970 00:00:00 GMT; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/login.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/index.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message='',Expires=Thu, 01 Jan 1970 00:00:00 GMT; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/login.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "cache-control": "max-age=0",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "upgrade-insecure-requests": "1",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/index.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+}
+--------------------------------------------------------------
+POST
+/login.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "content-length": "31",
+  "cache-control": "max-age=0",
+  "origin": "http://localhost:9000",
+  "upgrade-insecure-requests": "1",
+  "content-type": "application/x-www-form-urlencoded",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/login.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+}
+--------------------------------------------------------------
+GET
+/home.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "cache-control": "max-age=0",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/login.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+GET
+/logout
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/home.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message="
+}
+--------------------------------------------------------------
+GET
+/login.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/home.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message=; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/login.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "cache-control": "max-age=0",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "upgrade-insecure-requests": "1",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/home.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message=; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+POST
+/login.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "content-length": "28",
+  "cache-control": "max-age=0",
+  "origin": "http://localhost:9000",
+  "upgrade-insecure-requests": "1",
+  "content-type": "application/x-www-form-urlencoded",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/login.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message=; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/home.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "cache-control": "max-age=0",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/login.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message=; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/logout
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/home.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message=; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/login.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/home.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message=; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+POST
+/login.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "content-length": "28",
+  "cache-control": "max-age=0",
+  "origin": "http://localhost:9000",
+  "upgrade-insecure-requests": "1",
+  "content-type": "application/x-www-form-urlencoded",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/login.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message=; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/home.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "cache-control": "max-age=0",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/login.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message=; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/todoForm.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/home.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message=; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/scripts/home.js
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "*/*",
+  "referer": "http://localhost:9000/todoForm.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message=; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/logout
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/todoForm.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message=; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/login.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/todoForm.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message=; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+POST
+/login.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "content-length": "29",
+  "cache-control": "max-age=0",
+  "origin": "http://localhost:9000",
+  "upgrade-insecure-requests": "1",
+  "content-type": "application/x-www-form-urlencoded",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/login.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message=; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/home.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "cache-control": "max-age=0",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/login.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message=; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/todoForm.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/home.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message=; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/scripts/home.js
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "*/*",
+  "referer": "http://localhost:9000/todoForm.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message=; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/home.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/todoForm.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message=; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/viewTodos.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/home.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message=; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/scripts/viewTodos.js
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "*/*",
+  "referer": "http://localhost:9000/viewTodos.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message=; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/todos
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "*/*",
+  "referer": "http://localhost:9000/viewTodos.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message=; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/home.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/viewTodos.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message=; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/logout
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/home.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message=; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}
+--------------------------------------------------------------
+GET
+/login.html
+{
+  "host": "localhost:9000",
+  "connection": "keep-alive",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+  "referer": "http://localhost:9000/home.html",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+  "cookie": "message=; sessionid=0,Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+}

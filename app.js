@@ -15,6 +15,16 @@ const logger = function(fs,req,res) {
   console.log(`${req.method}    ${req.url}`);
   fs.appendFile('./data/log.json',logs,()=>{});
 }
+let session = {};
+
+const loadUser = function(req,res){
+  let sessionid = req.cookies.sessionid;
+
+  let user = session[sessionid];
+  if(user){
+    req.user = user;
+  }
+}
 
 const fileNotFound = function(fileName){
   return !fs.existsSync(fileName);
@@ -80,6 +90,13 @@ const processPostLogin = function(req,res){
   res.redirect('/home.html');
   res.end();
 }
+
+const processLogOut = function(req,res){
+  res.setHeader('Set-Cookie',`sessionid=0,Expires=${new Date(1).toUTCString()}`);
+  delete req.user;
+  res.redirect('/login.html');
+}
+
 const toHtml = function(todo){
   return `<h2>${todo}</h2>`
 }
@@ -111,6 +128,8 @@ app.get('/login.html',processGetLogin);
 app.post('/login.html',processPostLogin);
 
 app.get('/todos',processTodos);
+
+app.get('/logout',processLogOut);
 
 app.post('/newTodo',storeTodo);
 
