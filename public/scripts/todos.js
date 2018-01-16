@@ -12,6 +12,9 @@ class Todos {
   getAllTodos(){
     return this.todos;
   }
+  getTodoInfo(todoTitle){
+    return this.todos[todoTitle];
+  }
   map(mapperFunction){
     let todoTitles = Object.keys(this.todos);
     return todoTitles.map(mapperFunction);

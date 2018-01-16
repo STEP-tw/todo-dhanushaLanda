@@ -12,7 +12,7 @@ const logger = function(fs,req,res) {
     `${JSON.stringify(req.headers,null,2)}`,
     ''
   ].join('\n');
-  console.log(`${req.method}    ${req.url}`);
+  console.log(`${req.method} ${req.url}`);
   fs.appendFile('./data/log.json',logs,()=>{});
 }
 let session = {};
@@ -52,7 +52,6 @@ const serveResource = function(resource,res,content){
   let resourceType = getContentType(resource);
   res.setHeader('Content-Type',resourceType);
   res.write(content);
-
   res.end();
 }
 
@@ -69,24 +68,22 @@ const fileHandler = function(req,res){
 }
 
 const respondLoginFailed= function(res){
-  res.setHeader('Set-Cookie',`message=login failed;Max-Age=8`);
-  res.redirect('login.html');
+  res.setHeader('Set-Cookie',`message=login failed;Max-Age=5`);
+  res.redirect('/login.html');
 }
 
 const processGetLogin = function(req,res){
-  let html = fs.readFileSync('public/login.html','utf8');
+  let html = fs.readFileSync('./public/login.html','utf8');
   res.setHeader('Content-Type','text/html');
   res.write(html.replace('LOGIN_MESSAGE',req.cookies.message||''));
   res.end();
 }
 
 const processPostLogin = function(req,res){
-  console.log(req.body);
   let userName = req.body.username;
   if(!registeredUsers.includes(userName)) return respondLoginFailed(res);
   let sessionid = new Date().getTime();
-  res.setHeader('Set-Cookies',`sessionid=${sessionid}`);
-  res.setHeader('Set-Cookie',`message=`);
+  res.setHeader('Set-Cookie',`sessionid=${sessionid}`);
   res.redirect('/home.html');
   res.end();
 }
@@ -98,13 +95,14 @@ const processLogOut = function(req,res){
 }
 
 const toHtml = function(todo){
-  return `<h2>${todo}</h2>`
+  return `<h3><a href= todoForm.html.${todo} >${todo}</a></h3>`;
 }
 
 const processTodos = function(req,res){
   let serveResponse = {};
   serveResource.todos =  todosHandler.map(toHtml).join('');
   console.log(serveResource.todos);
+  res.setHeader('Content-Type','text/html');
   res.write(serveResource.todos);
   res.end();
 }
@@ -115,10 +113,29 @@ const storeTodo = function(req,res){
   res.end();
 }
 
+const getTodoInformation = function(req,res){
+  let title = req.cookies.title;
+  let serveResponse = {};
+  if(title)
+    serveResponse = todosHandler.todos.getTodoInfo(title);
+  res.write(JSON.stringify(serveResponse));
+  res.end();
+}
 
-/*=================*/
+/*=====================================*/
+
 let app = webapp.create();
 app.use((req,res)=>{logger(fs,req,res)});
+
+app.usePostProcess((req,res)=>{
+  let url = req.url;
+  if(url.startsWith('/todoForm.html.')){
+    let title = url.split('.')[2];
+    res.setHeader('Set-Cookie',`title=${title};Max-Age=5`);
+    res.redirect('/todoForm.html');
+  }
+});
+
 app.get('/',(req,res)=>{
   res.redirect('/index.html');
 });
@@ -132,6 +149,9 @@ app.get('/todos',processTodos);
 app.get('/logout',processLogOut);
 
 app.post('/newTodo',storeTodo);
+
+app.get('/todoInfo',getTodoInformation);
+
 
 app.usePostProcess(fileHandler);
 

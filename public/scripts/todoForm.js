@@ -10,10 +10,24 @@ const getTodoDetails = function(){
 }
 
 const requestToAddTodo = function(){
-  console.log('HI');
   let todoDetails  = getTodoDetails();
   let xReq = new XMLHttpRequest();
   xReq.open('POST',"/newTodo");
   let todoData = `title=${todoDetails.title}&description=${todoDetails.description}&items=${todoDetails.items}`;
   xReq.send(todoData);
 }
+
+const setTodoInfo = function(){
+  let todoInfo = JSON.parse(this.responseText);
+  document.getElementById('title').value = todoInfo.title || '';
+  document.getElementById('description').value = todoInfo.description || '';
+  document.getElementById('items').value = todoInfo.items || '';
+}
+
+const getTodoInfo = function(){
+  let req = new XMLHttpRequest();
+  req.addEventListener('load',setTodoInfo);
+  req.open('GET',"/todoInfo");
+  req.send();
+}
+window.onload = getTodoInfo;

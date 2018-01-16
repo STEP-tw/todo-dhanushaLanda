@@ -53,6 +53,22 @@ describe('app',()=>{
       })
     })
   });
+  describe('POST /login.html',()=>{
+    it('redirects to home page for valid user',(done)=>{
+      request(app,{method:'POST',url:'/login.html',body:'username=dhanu'},res=>{
+        th.should_be_redirected_to(res,'/home.html');
+        th.should_not_have_cookie(res,'message');
+      })
+      done();
+    })
+    it('redirects to login for invalid user',done=>{
+      request(app,{method:'POST',url:'/login.html',body:'username=badUser'},res=>{
+        th.should_be_redirected_to(res,'/login.html');
+        th.should_have_expiring_cookie(res,'message','login failed');
+        done();
+      })
+    })
+  })
   describe('GET /home.html',()=>{
     it('server the home page of logined User',done=>{
       request(app,{method:'GET',url:'/home.html'},res=>{
@@ -62,7 +78,6 @@ describe('app',()=>{
       })
     })
   })
-
   describe('GET /logout',()=>{
     it('redirects to login page',done=>{
       request(app,{method:'GET',url:'/logout'},res=>{
@@ -71,7 +86,5 @@ describe('app',()=>{
         done();
       })
     })
-
   })
-
 });
