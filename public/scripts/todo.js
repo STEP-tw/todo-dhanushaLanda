@@ -1,4 +1,5 @@
 const Todo = function(todoObject){
+  this.id = todoObject.id;
   this.title = todoObject.title;
   this.description = todoObject.description ;
   this.items = todoObject.items;

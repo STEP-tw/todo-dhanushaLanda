@@ -6,20 +6,24 @@ class TodosHandler {
     this.storagePath = storagePath;
     this.todos;
   }
+  getLastTodoId(todos){
+    return Object.keys(todos).length;
+  }
   loadTodos(){
     let filePath = this.storagePath;
     fs.readFile(filePath,'utf8',(err,userTodos)=>{
       if(err) throw err;
-      if(userTodos=='')
-        return this.todos = new Todos({});
+      if(userTodos=={})
+        return this.todos = new Todos(0,{});
       userTodos = JSON.parse(userTodos)
-      this.todos = new Todos(userTodos);
+      let idCounter = this.getLastTodoId(userTodos);
+      this.todos = new Todos(idCounter,userTodos);
     });
   }
   storeTodo(todo){
     this.todos.addTodo(todo);
     let allTodos = this.todos.getAllTodos();
-    fs.writeFile(this.storagePath,JSON.stringify(allTodos),(err)=>{
+    fs.writeFile(this.storagePath,JSON.stringify(allTodos,null,2),(err)=>{
       if(err) console.log(err);
     });
   }

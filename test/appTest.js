@@ -2,6 +2,7 @@ let chai = require('chai');
 let assert = chai.assert;
 let app = require('../app.js');
 let request = require('./requestSimulator.js');
+process.env.COMMENDS_STORE = './testTodos.js'
 let th = require('./testHelper.js');
 
 describe('app',()=>{
@@ -70,10 +71,18 @@ describe('app',()=>{
     })
   })
   describe('GET /home.html',()=>{
-    it('server the home page of logined User',done=>{
+    it('serves the home page of logined User',done=>{
       request(app,{method:'GET',url:'/home.html'},res=>{
         th.status_is_ok(res);
         th.body_contains(res,'ToDoLists');
+        done();
+      })
+    })
+  })
+  describe.skip('GET /viewTodos.html',()=>{
+    it('serves the viewTodos page ',done=>{
+      request(app,{mehtod:'GET',url:'/viewTodos.html'},res=>{
+        th.status_is_ok(res);
         done();
       })
     })
