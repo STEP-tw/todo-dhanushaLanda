@@ -27,7 +27,6 @@ class LoginHandler extends DefaultHandler{
     res.setHeader('Set-Cookie', `message=Login Failed; Max-Age=5`);
     res.redirect('/login.html');
   }
-
   execute(req,res){
     if(req.method=='POST' && req.url == this.path)
       return this.loginUser(req,res);
