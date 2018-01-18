@@ -16,22 +16,22 @@ class Todos {
     return this.todos;
   }
   getTodoInfo(todoId){
+    console.log(this.todos);
     return this.todos[todoId];
   }
   getTodoTitle(todoId){
-    console.log(this.todos[todoId]);
     return this.todos[todoId].title;
   }
   getUniqTodoIdCounter(){
     return this.uniqTodoIdCounter;
   }
   map(mapperFunction){
-    // let todoTitles = [];
-    // for(let i in this.todos){
-    //   todoTitles.push({'id':this.todos[i]["id"],"title":this.todos[i]['title']});
-    // }
-    // console.log();
-    let todoTitles = Object.keys(this.todos);
+    let todoTitles = [];
+    for(let i in this.todos){
+      let title = this.todos[i].title;
+      let id = this.todos[i].id;
+      todoTitles.push({'id':id,"title":title});
+    }
     return todoTitles.map(mapperFunction);
   }
 }

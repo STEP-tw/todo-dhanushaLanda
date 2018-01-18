@@ -22,6 +22,7 @@ let request = function(app,options,onComplete){
     write:(text)=>res_contents+=text
   };
   app(req,res);
+  console.log(options.body);
   options.body && req.emit('data',options.body);
   req.emit('end');
 }

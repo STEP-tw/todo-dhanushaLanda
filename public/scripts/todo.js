@@ -4,6 +4,9 @@ const Todo = function(todoObject){
   this.description = todoObject.description ;
   this.items = todoObject.items;
 }
+Todo.prototype.getId=function() {
+  return this.id;
+}
 Todo.prototype.getTitle = function () {
   return this.title;
 };

@@ -19,62 +19,14 @@ const logger = function(fs,req,res) {
   console.log(`${req.method} ${req.url}`);
   fs.appendFile('./data/log.json',logs,()=>{});
 }
-let session = {};
-
-const loadUser = function(req,res){
-  let sessionid = req.cookies.sessionid;
-  let user = session[sessionid];
-  console.log(user);
-  if(user){
-    req.user = user;
-  }
-}
-
-const loginUser = function (req, res) {
-  let sessionId = new Date().getTime();
-  let userName = req.body.username;
-  let password = req.body.password;
-  let user = getUser(userName, password);
-  if (user) {
-    user.sessionId = sessionId;
-    res.setHeader('Set-Cookie', `sessionId=${sessionId}`);
-    res.redirect('/todolists');
-    return;
-  }
-  res.setHeader('Set-Cookie', `message=Login Failed; Max-Age=5`);
-  res.redirect('/');
-}
-
 
 const respondLoginFailed= function(res){
   res.setHeader('Set-Cookie',`message=login failed;Max-Age=5`);
   res.redirect('/login');
 }
 
-const processGetLogin = function(req,res){
-  console.log(req.user);
-  if(req.user) {
-    res.redirect('/home.html');
-    return;
-  }
-  let html = fs.readFileSync('./public/login.html','utf8');
-  res.setHeader('Content-Type','text/html');
-  res.write(html.replace('LOGIN_MESSAGE',req.cookies.message||''));
-  res.end();
-}
-
-const processPostLogin = function(req,res){
-  let userName = req.body.username;
-  if(!registeredUsers.includes(userName)) return respondLoginFailed(res);
-  let sessionid = new Date().getTime();
-  res.setHeader('Set-Cookie',`sessionid=${sessionid}`);
-  session[sessionid]=userName;
-  res.redirect('/home.html');
-  res.end();
-}
-
 const processLogOut = function(req,res){
-  res.setHeader('Set-Cookie',`sessionid=0,Expires=${new Date(1).toUTCString()}`);
+  res.setHeader('Set-Cookie',`sessionId=0,Expires=${new Date(1).toUTCString()}`);
   delete req.user;
   res.redirect('/index.html');
 }
@@ -85,10 +37,10 @@ const toHtml = function(todo){
 
 const processTodos = function(req,res){
   let serveResponse = {};
-  serveResource.todos =  todosHandler.map(toHtml).join('');
-  console.log(serveResource.todos);
+  serveResponse.todos =  todosHandler.map(toHtml).join('');
+  console.log(serveResponse);
   res.setHeader('Content-Type','text/html');
-  res.write(serveResource.todos);
+  res.write(serveResponse.todos);
   res.end();
 }
 
@@ -107,32 +59,50 @@ const getTodoInformation = function(req,res){
   res.end();
 }
 
+const homePage = function(req,res){
+  let homePage = fs.readFileSync('./public/home.html','utf8');
+  res.setHeader('Content-Type','text/html');
+  let user = req.user;
+  res.write(homePage.replace('WELCOME_USER',`WELCOME ${user}`));
+  res.end();
+}
+
 /*=====================================*/
 
 let app = webapp.create();
-// app.use(loadUser);
 app.use((req,res)=>{logger(fs,req,res)});
 
-app.usePostProcess((req,res)=>{
+app.use((req,res)=>{
   let url = req.url;
   if(url.startsWith('/todoForm.html.')){
     let id = url.split('.')[2];
-    console.log(id);
-    let title = todosHandler.todos.getTodoTitle(id);
-    console.log(title);
-    res.setHeader('Set-Cookie',`title=${title};Max-Age=5`);
-    res.redirect('/todoForm.html');
-  }
-});
-
-app.get('/',(req,res)=>{
-  res.redirect('/index.html');
+    let todoPage = fs.readFileSync('./public/todoForm.html','utf8');
+    let todoInfo = todosHandler.todos.getTodoInfo(id);
+    console.log(todoInfo);
+    todoPage = todoPage.replace("TITLE",todoInfo.title);
+    todoPage= todoPage.replace("DESCRIPTION",todoInfo.description);
+    todoPage = todoPage.replace("ITEMS",todoInfo.items)||"";
+    res.setHeader('Content-Type','text/html');
+    res.write(todoPage);
+    res.end();
+    }
+    return;
 });
 
 app.use(loginHandler.getHandler());
 
+app.use(loginHandler.session.getHandler());
 
-app.get('/login.html',processPostLogin);
+app.use((req,res)=>{
+  if(req.url!='/index.html'&& !req.user)
+    res.redirect('/index.html');
+});
+app.get('/',(req,res)=>{
+  res.redirect('/index.html');
+});
+
+
+app.get('/home',homePage);
 
 app.get('/todos',processTodos);
 

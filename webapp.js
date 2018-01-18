@@ -23,7 +23,6 @@ const parseCookies = text=> {
 }
 let invoke = function(req,res){
   let handler = this._handlers[req.method][req.url];
-  console.log(handler);
   if(!handler){
     return;
   }
@@ -58,7 +57,6 @@ const main = function(req,res){
   req.on('end',()=>{
     req.body = parseBody(content);
     content="";
-    debugger;
     this._preprocess.forEach(middleware=>{
       if(res.finished) return;
       middleware(req,res);

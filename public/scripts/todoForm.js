@@ -30,4 +30,4 @@ const getTodoInfo = function(){
   req.open('GET',"/todoInfo");
   req.send();
 }
-window.onload = getTodoInfo;
+// window.onload = getTodoInfo;
